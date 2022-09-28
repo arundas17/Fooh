@@ -1,0 +1,37 @@
+.fooh-admin{
+    .btn-yellow{
+        background: $color-orange;
+        color: $color-white;
+        min-width: 150px !important;
+        &:hover{
+            background: #ffce00;
+        }
+        &--grn{
+            background: #009000;
+            color: $color-white;
+            &:hover{
+                background: #03d403;;
+            }
+        }
+    }
+    .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus{
+        background-color: $color-orange !important;
+        color: $color-white !important;
+    }
+    #side-menu{
+        .collapse.in{
+            background-color: $color-orange !important;
+        }
+    }
+    .dxWeb_edtCheckBoxUnchecked_Moderno{
+        background-image: url(http://fooh.strat-staging.com/DXR.axd?r=0_2775-VNRap);
+    }
+    .dxWeb_edtCheckBoxChecked_Moderno{
+        background-image: url(http://fooh.strat-staging.com/DXR.axd?r=0_2775-VNRap);
+    }
+    #ctl00_ContentPlaceHolder1_ProductList_frame,
+    #ctl00_ContentPlaceHolder1_MerchantList_frame{
+        height: 900px;
+    }
+    
+}

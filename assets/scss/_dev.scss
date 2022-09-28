@@ -1,0 +1,31 @@
+#ctl30_pcNewsletterAlert_PW-1{
+    padding: 35px 20px;
+    box-shadow: none;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    width: 767px !important;
+    .dxpc-header{
+        background: $color-white;
+        .dxpc-closeBtn{
+            position: absolute;
+            right: 20px;
+            top: 24px;
+        }
+    }
+    .dxpc-contentWrapper{
+        min-height: 150px;
+    }
+}
+.dxpcModalBackLite_Moderno{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
+    opacity: 1;
+}
+
+@media (max-width: 767px){
+    #ctl30_pcNewsletterAlert_PW-1{
+        padding: 35px 5px;
+        width: 100% !important;
+    }
+}

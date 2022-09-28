@@ -1,0 +1,39 @@
+.fooh-footer-nl{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    display: inline-block;
+    width: 100%;
+    &__text{
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    &__sub{
+        margin: 8px 0px;
+    }
+    &__sub-input{
+        width: 100%;
+        padding: 6px 16px;
+        border-radius: 10px;
+        min-height: 40px;
+        margin-bottom: 12px;
+        color: #333;
+        font-size: 12px;
+    }
+    .btn.btn-yellow{
+        color: #000;
+        &:hover{
+            color: #000;
+        }
+    }
+}
+.fooh-footer-logo{
+    width: 100px;
+    height: auto;
+}
+.fooh-footer-social-logo{
+    img{
+        width: 25px;
+        height: auto;
+    }
+}

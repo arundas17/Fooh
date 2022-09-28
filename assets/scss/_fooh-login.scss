@@ -1,0 +1,421 @@
+@mixin tablet-pro {
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 600px) and (max-width: 1023.8px) {
+        @content;
+    }
+}
+
+@mixin mobile-tablet {
+    @media (max-width: 1023.8px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin ie-fix {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        @content;
+    }
+}
+.fooh-login {
+    padding: 40px 24px;
+    background-color: #fff;
+    &--reg{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+    &__head {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 24px;
+        color: #000;
+        font-weight: 700;
+    }
+
+    &__inner {
+        display: flex;
+        &--reg{
+            flex-wrap: wrap;
+            .fooh-login__wrap{
+                width: 50%;
+                padding-right: 24px;
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    &__left-sec {
+        width: 50%;
+        position: relative;
+        padding-right: 60px;
+        &--signup{
+            display: flex;
+            .fooh-login__btn-outer{
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+            }
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+    }
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    &__label {
+        color: #000;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    &__input-txt {
+        position: relative;
+
+        input {
+            border: 1px solid #000;
+            padding: 8px 16px;
+            border-radius: 5px;
+            width: 100%;
+            outline: none;
+        }
+    }
+
+    &__forgot {
+        font-size: 14px;
+        line-height: 18px;
+        color: #fea72d;
+        text-decoration: none;
+
+        &:hover {
+            color: #fea72d;
+            text-decoration: underline;
+        }
+    }
+
+    &__mid-sec {
+        position: relative;
+        width: 1px;
+        background-color: #000;
+
+        span {
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            transform: translate(50%, -50%);
+            background-color: #fff;
+            display: inline-block;
+            padding: 5px;
+        }
+    }
+
+    &__btn-outer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__btn {
+        padding: 8px 24px;
+        border: none;
+        color: #000;
+        display: inline-flex;
+        justify-content: center;
+        background-color: #fea72d;
+        align-items: center;
+        transition: all .3s;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 4px;
+
+        &:hover {
+            font-weight: bold;
+            background: #ffce00;
+            color: #000;
+        }
+        &--white{
+            color: #fff;
+            width: 100%;
+            &:hover{
+                color: #fff;
+            }
+        }
+    }
+
+    &__right-sec {
+        padding: 0 60px;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    &__right-head {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 24px;
+        color: $color-black;
+        text-align: center;
+    }
+
+    &__share-btn {
+        width: 100%;
+        color: #fff;
+        padding: 8px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3B5999;
+        margin-bottom: 24px;
+        transition: all .3s;
+        border: 1px solid #3B5999;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: bold;
+
+        &:hover {
+            color: #3B5999;
+            background-color: #fff;
+            font-weight: bold;
+
+            .fooh-login__icon {
+                path {
+                    fill: #3B5999;
+                }
+            }
+        }
+    }
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 24px;
+
+        path {
+            fill: #fff;
+        }
+    }
+
+    &--btn-red {
+        background-color: #DE4B39;
+        border: 1px solid #DE4B39;
+
+        &:hover {
+            color: #DE4B39;
+
+            .fooh-login__icon {
+                path {
+                    fill: #DE4B39;
+                }
+            }
+        }
+    }
+
+    &__btn-txt {
+        min-width: 150px;
+        display: inline-block;
+    }
+
+    &__new-account {
+        // font-weight: $font-regular;
+        color: $color-black;
+        text-align: center;
+    }
+
+    &__orange {
+        color: #fea72d;
+        text-decoration: none;
+
+        &:hover {
+            color: #fea72d;
+            text-decoration: underline;
+        }
+    }
+
+    &__btn-outer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__left-btn-outer {
+        display: flex;
+        flex-direction: column;
+
+        .fooh-login__btn {
+            margin-bottom: 24px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    &--signup {
+
+        .fooh-login__right-sec,
+        .fooh-login__left-sec {
+            max-width: 530px;
+            margin: 0 auto;
+            padding: 0px 60px;
+        }
+
+        .fooh-login__inner {
+            margin-bottom: 24px;
+        }
+    }
+    &__checkbox-outer {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 16px;
+        input[type=checkbox] {
+            display: none;
+        }
+        input[type=checkbox]+label {
+            position: relative;
+            margin-left: 30px;
+            cursor: pointer;
+            margin-bottom: 0px;
+            font-weight: normal;
+            &::before {
+                content: "";
+                width: 20px;
+                height: 20px;
+                border: 1px solid #000;
+                position: absolute;
+                left: -30px;
+                top: 0px;
+            }
+        }
+        input[type=checkbox]:checked+label {
+            &::after {
+                content: "";
+                position: absolute;
+                left: -22px;
+                top: 3px;
+                width: 5px;
+                height: 12px;
+                border: solid #fea72d;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+}
+@include tablet-pro {
+    .fooh-login {
+        &__right-head {
+            min-height: 50px;
+        }
+    }
+}
+@include tablet {
+    .fooh-login {
+        &__left-sec,
+        &__right-sec {
+            width: 50%;
+        }
+        &__left-sec {
+            padding-right: 32px;
+        }
+        &__right-sec {
+            padding-left: 32px;
+            padding-right: 0px;
+        }
+    }
+}
+@include mobile-tablet {
+    .fooh-login {
+        &__btn-txt,
+        &__left-btn-outer {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &__right-head {
+            font-size: 16px;
+            line-height: 20px;
+            min-height: 50px;
+        }
+        &--signup {
+            .fooh-login__right-sec,
+            .fooh-login__left-sec {
+                padding: 0px 32px;
+            }
+        }
+    }
+}
+
+
+
+@include mobile {
+    .fooh-login {
+        &__inner {
+            flex-direction: column;
+        }
+        &__left-sec,
+        &__right-sec {
+            width: 100%;
+        }
+        &__left-sec {
+            padding-right: 0px;
+            padding-bottom: 24px;
+            border-right: none;
+            border-bottom: 1px solid #000;
+        }
+        &__right-sec {
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 24px;
+        }
+        &__mid-sec {
+            width: 100%;
+        }
+        &__btn-txt {
+            min-width: auto;
+        }
+        &__icon {
+            margin-right: 16px;
+        }
+        &__right-head {
+            min-height: auto;
+        }
+        &--signup {
+            .fooh-login__right-sec {
+                padding: 24px 0px 0px;
+            }
+            .fooh-login__left-sec {
+                padding: 0px 0px 24px;
+            }
+        }
+        &__new-account{
+            a{
+                display: block;
+            }
+        }
+    }
+}
+

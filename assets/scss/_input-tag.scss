@@ -1,0 +1,259 @@
+.fooh-input {
+    &__label {
+        color: #000;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    &__input-txt {
+        position: relative;
+        .dxeButtonEdit_Moderno{
+            border: 1px solid #000 !important;
+            border-radius: 5px !important;
+            td.dxic{
+                padding: 8px 12px !important;
+            }
+        }
+
+        input {
+            border: 1px solid #000;
+            padding: 8px 12px;
+            border-radius: 5px;
+            width: 100%;
+
+            &::placeholder {
+                color: #000;
+            }
+        }
+
+        &--file-up {
+            display: block;
+            text-align: center;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 16px;
+
+            .file-select {
+                display: block;
+                border: 1px solid #000;
+                color: #000;
+                cursor: pointer;
+                height: 41px;
+                text-align: left;
+                background: #ffffff;
+                overflow: hidden;
+                // position: relative;
+                border-radius: 5px;
+
+                &__name {
+                    line-height: 40px;
+                    display: inline-block;
+                    padding: 0 10px;
+                    width: 75%;
+                }
+
+                &__button {
+                    background: #333333;
+                    color: #fff;
+                    text-align: center;
+                    padding: 0 10px;
+                    display: inline-block;
+                    height: 40px;
+                    line-height: 40px;
+                    width: calc(25% - 5px);
+                    border-radius: 5px;
+                    position: absolute;
+                    right: 0;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+
+            .file-upload .file-select input[type="file"] {
+                z-index: 100;
+                cursor: pointer;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                filter: alpha(opacity=0);
+            }
+
+            .file-upload .file-select.file-select-disabled {
+                opacity: 0.65;
+            }
+
+        }
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0px;
+        }
+
+        &--radio {
+            flex-direction: row;
+        }
+        &--dob{
+            width: 30% !important;
+        }
+        &--email{
+            width: 70% !important;
+        }
+
+    }
+
+    &__name {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+
+    &__forgot {
+        font-size: 14px;
+        line-height: 18px;
+        color: green;
+
+        &:hover {
+            color: green;
+            text-decoration: underline;
+        }
+    }
+
+    &__desc {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 16px;
+        color: #D0342C;
+        font-weight: bold;
+    }
+
+    &__eye-icon {
+        width: 16px;
+        height: 17px;
+    }
+
+    &__input-password {
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        width: 20px;
+        height: 20px;
+    }
+
+    &__text-area {
+        height: 120px;
+        display: block;
+        resize: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: 1px solid #000;
+        padding: 10px 16px;
+        width: 100%;
+        min-width: 200px;
+        color: #000000;
+        border-radius: 5px;
+    }
+
+    &__radio {
+        margin-right: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        [type="radio"]:checked,
+        [type="radio"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+
+        [type="radio"]:checked+label,
+        [type="radio"]:not(:checked)+label {
+            position: relative;
+            padding-left: 24px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: #000;
+            padding-right: 8px;
+        }
+
+        [type="radio"]:checked+label:before,
+        [type="radio"]:not(:checked)+label:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 1px;
+            width: 18px;
+            height: 18px;
+            border: 2px solid #000;
+            border-radius: 100%;
+            background: #fff;
+        }
+
+        [type="radio"]:checked+label:after,
+        [type="radio"]:not(:checked)+label:after {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background: #fea72d;
+            position: absolute;
+            top: 3px;
+            left: 2px;
+            border-radius: 100%;
+            -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+        }
+
+        [type="radio"]:not(:checked)+label:after {
+            opacity: 0;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+        }
+
+        [type="radio"]:checked+label:after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+}
+
+.fooh-primary-btn {
+    display: inline-flex;
+    background-color: #eda900;
+    border-radius: 4px;
+    min-width: 120px;
+    color: #000;
+    transition: all .3s;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px 20px 8px 20px;
+    font-weight: bold;
+
+    &:hover {
+        font-weight: bold;
+        background: #ffce00;
+        color: #000;
+    }
+}
+
+@media (max-width: 768px) {
+    .fooh-input{
+        &__wrap {
+            &--dob{
+                width: 100% !important;
+            }
+            &--email{
+                width: 100% !important;
+            }
+    
+        }
+    }
+}

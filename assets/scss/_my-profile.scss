@@ -1,0 +1,52 @@
+.fh-my-profile {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  &__box {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 150px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1000ms ease;
+    transform-origin: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    &--visible {
+      max-height: 100vh;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  &__inner {
+    text-align: center;
+    padding: 10px 16px;
+  }
+  &__title {
+    background: $color-grey;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: all 0.3s;
+    color: $color-black;
+    &:hover{
+      font-weight: 500 !important;
+    }
+    
+  }
+  &__logout {
+    background: #ffea00;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 8px;
+    transition: all 0.3s;
+    color: $color-black;
+    &:hover{
+      font-weight: 500 !important;
+    }
+  }
+}
