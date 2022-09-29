@@ -34,3 +34,11 @@
         }
     }
 }
+
+@media (max-width: 600px){
+    .fooh-checkout-adrs-card{
+        &__content{
+            flex-direction: column;
+        }
+    }
+}
