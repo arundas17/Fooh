@@ -1,0 +1,41 @@
+.fooh-checkout{
+    width: 100%;
+    &__title{
+        font-size: 35px;
+        font-weight: bold;
+        color: #fea72d;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__img-container{
+        width: 100%;
+        display: flex;
+    }
+    &__img{
+        max-width: 550px;
+        margin: 0 auto;
+        display: block;
+    }
+    &__cnt{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        .fooh-btn{
+            display: block;
+            margin:  20px auto;
+        }
+    }
+}
+
+@include mobile{
+    .fooh-checkout{
+        &__title{
+            font-size: 32px;
+        }
+        &__img{
+            max-width: 100%;
+            
+        }
+    }
+}

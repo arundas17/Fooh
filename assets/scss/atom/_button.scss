@@ -1,0 +1,17 @@
+.fooh-btn{
+    padding: 8px 24px;
+    border: none;
+    color: #000;
+    display: inline-flex;
+    justify-content: center;
+    background-color: #fea72d;
+    align-items: center;
+    transition: all .3s;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    &:hover{
+        background-color: #ffce00;
+    }
+}

@@ -1,0 +1,60 @@
+.fooh-order-sum-card{
+    font-size: 14px;
+    border-radius: 5px;
+    border-top: 3px solid $yellow;
+    color: $black;
+    background-color: $grey;
+    padding: 20px 20px;
+    &__basic-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    &__amnt-type{
+        font-weight: 600;
+    }
+    &__amnt{
+        font-weight: 500;
+    }
+    &__total{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $yellow;
+        border-bottom: 3px solid $yellow;
+        padding-top: 15px;
+        padding-bottom: 20px;
+
+        & .fooh-order-sum-card__amnt{
+            font-weight: 700;
+        }
+        & .fooh-order-sum-card__amnt-type{
+            font-weight: 700;
+        }
+    }
+    &__pay-methods{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    &__pay-methods-title{
+        opacity: .5;
+        margin-bottom: 15px;
+    }
+    .fooh-input__radio{
+        margin-bottom: 5px;
+        label{
+            font-weight: 400;
+        }
+    }
+    .stripe-img{
+        height: 20px;
+        width: auto;
+    }
+    &__confirm-sec{
+        display: flex;
+    }
+    .fooh-btn{
+        margin: 0 auto;
+        min-width: 200px;
+    }
+}

@@ -1,0 +1,36 @@
+.fooh-checkout-adrs-card{
+    font-size: 15px;
+    border-top: 3px solid $yellow;
+    border-radius: 5px;
+    color: $black;
+    background-color: $grey;
+    &__content{
+        display: flex;
+    }
+    &__delivery-info,
+    &__billing-info{
+        flex: 1;
+        padding: 20px;
+    }
+    &__info-title{
+        font-size: 17px;
+        margin-bottom: 20px;
+        & svg{
+            display: inline-block;
+            width: 15px;
+        }
+        & span{
+            opacity: .5;
+            margin-left: 5px;
+        }
+    }
+    &__name{
+        margin-bottom: 10px;
+    }
+    &__ph{
+        margin-top: 10px;
+        & b{
+            font-weight: 500;
+        }
+    }
+}

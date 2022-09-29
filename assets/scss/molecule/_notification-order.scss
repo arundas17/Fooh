@@ -1,0 +1,83 @@
+.fooh-notification-order{
+    width: 100%;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+    &__left{
+        width: 20%;
+        max-width: 120px;
+        margin-right: 20px;
+    }
+    &__img-container{
+        max-width: 100%;
+        height: 100%;
+        border: 1px solid #CCCCCC;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &__img{
+        width: 100%;
+        min-width: 120px;
+        min-height: 124px;
+    }
+    &__right{
+        flex: 1;
+        &_top{
+            width: 100%;
+            padding: 20px 0;
+        }
+        &_bottom{
+            text-align: end;
+        }
+    }
+    &__cnt{
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    &__date{
+        font-weight: 500;
+    }
+
+    &__link{
+        color: #1F1083;
+        font-weight: bold;
+        padding-right: 25px;
+        position: relative;
+        display: inline-block;
+        &_arrow{
+            display: inline-block;
+            transition: all 0.2s ease-in-out;
+        }
+        &:hover{
+            color: #1F1083;
+            font-weight: bold;
+            .fooh-notification-order__link_arrow{
+                transform: translateX(5px);
+            }
+        }
+    }
+
+    &--confirmed{
+        background-color: rgba(249, 167, 44, 0.5);
+    }
+
+    &--refund{
+        background-color: rgba(51, 51, 51, 0.1);
+        
+    }
+}
+
+@media (max-width: 668px){
+    .fooh-notification-order{
+        flex-direction: column;
+        &__left{
+            width: 100%;
+            max-width: none;
+        }
+        &__right{
+            padding: 10px;
+        }
+    }
+}
