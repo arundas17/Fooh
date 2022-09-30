@@ -95,3 +95,23 @@ $('#chooseFile').bind('change', function () {
     document.querySelector('.fooh__home-categ').style.pointerEvents = 'none';
     document.querySelector('.fooh__home-categ .caret').style.display = 'none';
   }
+
+const qty_value = document.querySelectorAll('.fooh-cart-card__qnty_input');
+const qty_plus = document.querySelectorAll('.fooh-cart-card__qnty_btn--plus');
+const qty_minus = document.querySelectorAll('.fooh-cart-card__qnty_btn--min');
+
+if (qty_value || qty_plus || qty_minus) {
+    for (let i = 0; i < qty_value.length; i++) {
+        qty_plus[i].addEventListener('click', function () {
+            qty_value[i].setAttribute('value', parseInt(qty_value[i].value) + 1);
+        });
+        qty_minus[i].addEventListener('click', function () {
+            if (parseInt(qty_value[i].value) === 1) {
+                qty_value[i].disabled = true;
+            } else {
+                qty_value[i].disabled = false;
+                qty_value[i].setAttribute('value', parseInt(qty_value[i].value) - 1);
+            }
+        });
+    }
+}
