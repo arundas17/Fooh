@@ -1,0 +1,67 @@
+.devlivery-adrs-form{
+    &__head {
+        font-size: 18px;
+        line-height: 24px;
+        color: $black;
+        margin-bottom: 10px;
+    }
+    &-card{
+        border-top: 3px solid $yellow;
+        border-radius: 5px;
+        background-color: $grey;
+        padding: 24px;
+        margin-bottom: 24px;
+        &__input-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            .fooh-input__wrap {
+                width: 50%;
+                padding-right: 24px;
+                &:last-child {
+                    padding-right: 0px;
+                }
+            }
+            &--adrs{
+                .fooh-input__wrap {
+                    width: 33.33%;
+                } 
+            }
+        }
+    }
+    &__actions{
+        display: flex;
+        justify-content: space-between;
+
+        & .fooh-btn{
+            min-width: 180px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .devlivery-adrs-form{
+        .devlivery-adrs-form-card {
+            &__input-wrap {
+                flex-direction: column;
+                margin-bottom: 16px;
+                .fooh-input__wrap {
+                    width: 100%;
+                    padding-right: 0px;
+                }
+            }
+            &__adrs{
+                padding-bottom: 16px;
+            }
+        }
+        &__actions{
+            flex-direction: column;
+            .fooh-btn{
+                min-width: 180px;
+                &--outlined{
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}
