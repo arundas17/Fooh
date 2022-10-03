@@ -660,17 +660,17 @@ $color-grey: #e8e8e8;
 
 @media (max-width: 783.9px){
 .fooh{
-    .virtualhead{
-        height: 150px;
-    }
-    .header .logo svg{
-        margin: 8px 0;
-        path{
-            fill: $color-orange;
+    // .virtualhead{
+    //     height: 150px;
+    // }
+    // .header .logo svg{
+    //     margin: 8px 0;
+    //     path{
+    //         fill: $color-orange;
            
-        }
+    //     }
             
-    }
+    // }
     .header .navbar-nav>li:first-child>a,
     .header .halal-menu .dropdown-menu{
         background: none;
@@ -688,46 +688,46 @@ $color-grey: #e8e8e8;
     .header .curved-menu .dropdown-menu{
         background: none;
     }
-    .header .navbar-nav > li > a{
-        padding: 7px !important;
-        color: #333 !important;
-    }
+    // .header .navbar-nav > li > a{
+    //     padding: 7px !important;
+    //     color: #333 !important;
+    // }
     .header .nav > li > .custom-care{
         font-weight: 300;
     }
-    .fooh-nav{
-        position: absolute;
-        top: 56px;
-        background: #efefef;
-        width: 200px;
-        border: 1px solid #666;
-        padding: 20px;
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-        left: -70px;
-        flex-direction: column;
-        align-items: baseline;
-        justify-content: flex-start;
-        li,a,a:focus{
-            color: #333 !important;
-            font-size: 12px !important;
-        }
-        li{
-            padding: 0 0 16px 0;
-        }
-        .login{
-            .btn-group .fooh-btn{
-                color: $color-orange;
-            }
-        }
-        svg{
-            path{
-                fill: $color-orange;
-            }
-        }
+    // .fooh-nav{
+    //     position: absolute;
+    //     top: 56px;
+    //     background: #efefef;
+    //     width: 200px;
+    //     border: 1px solid #666;
+    //     padding: 20px;
+    //     -webkit-border-radius: 4px;
+    //     -moz-border-radius: 4px;
+    //     border-radius: 4px;
+    //     left: -70px;
+    //     flex-direction: column;
+    //     align-items: baseline;
+    //     justify-content: flex-start;
+    //     li,a,a:focus{
+    //         color: #333 !important;
+    //         font-size: 12px !important;
+    //     }
+    //     li{
+    //         padding: 0 0 16px 0;
+    //     }
+    //     .login{
+    //         .btn-group .fooh-btn{
+    //             color: $color-orange;
+    //         }
+    //     }
+    //     svg{
+    //         path{
+    //             fill: $color-orange;
+    //         }
+    //     }
 
-    }
+    // }
     .fooh-nav-btn{
         background: #efefef !important;
         background-color: #efefef !important;
