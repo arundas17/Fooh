@@ -29,6 +29,35 @@
     padding: 20px 20px 25px;
 }
 
+.dxgvControl_Material.grid.dxgv.dxgvAdD{
+    #ctl28_GridOrders_DXMainTable{
+        border-radius: 0px !important;
+        box-shadow: none !important;
+        border: 1px solid $black;
+        border-bottom: none !important;
+    }
+    .dxgvEditFormDisplayRow_Material td.dxgv, .dxgvDetailCell_Material td.dxgv, .dxgvDataRow_Material td.dxgv, .dxgvDetailRow_Material.dxgvADR td.dxgvAIC{
+        border-bottom: 1px solid $black !important;
+        border-right: 1px solid $black !important;
+    }
+    .dxgvHeader_Material{
+        border: 1px solid $black !important;
+    }
+    .dxgv.dxgRRB.dx-ac{
+        border-right: none !important;
+    }
+    .dxgvTable_Material{
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        border: 1px solid $black !important;
+        border-bottom: none !important;
+    }
+    .dxgvDataRow_Material td.dxgvIndentCell, .dxgvDetailRow_Material td.dxgvIndentCell, .dxgvPreviewRow_Material td.dxgvIndentCell, .dxgvGroupFooter_Material td.dxgvIndentCell{
+        border-top: 1px solid $black !important;
+    }
+}
+
+
 @media (max-width: 767px){
     #ctl30_pcNewsletterAlert_PW-1,#ctl26_pcCartNotification_PW-1{
         padding: 35px 5px;
