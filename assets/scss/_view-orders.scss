@@ -44,6 +44,20 @@ $color-grey-5: #AAAAAA;
             width: 30%;
         }
     }
+
+    .fooh-cart-card__wrapper{
+        width: 100%;
+        &:last-child{
+            .fooh-view-ordrs__progress-wrap{
+                border: none;
+            }
+        }
+    }
+
+    .fooh-btn{
+        cursor: pointer;
+    }
+
     &__products{
         border-top: 3px solid $yellow;
         border-radius: 5px;
@@ -54,7 +68,7 @@ $color-grey-5: #AAAAAA;
         .fooh-cart-card{
             margin-top: $spacer-0;
             border-color: transparent;
-            padding: $spacer-1 $spacer-0;
+            padding: $spacer-3 $spacer-0 $spacer-0;
         }
         .fooh-cart-card__cnt_head{
             min-height: auto;
@@ -77,6 +91,7 @@ $color-grey-5: #AAAAAA;
         .fooh-cart-card__cnt_right{
             display: flex;
             align-items: center;
+            justify-content: space-around;
         }
         .fooh-cart-card__cnt_left{
             width: calc(90% + 100px);
@@ -99,9 +114,14 @@ $color-grey-5: #AAAAAA;
         width: 30%;
     }
     &__order-progress {
-        width: 100%;
-        padding: $spacer-6 $spacer-5;
-        margin-bottom: 40px;
+        width: 90%;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.2s ease-in-out;
+        margin: 0 auto;
+        &--active{
+            max-height: 100vh;
+        }
     }
     &__progress-bar {
         display: flex;
@@ -135,7 +155,8 @@ $color-grey-5: #AAAAAA;
         align-items: center;
         margin: 0 auto;
         list-style: none;
-        padding: 0;
+        border-bottom: 3px solid #fea72d;
+        padding: 40px 32px 60px;
     }
     &__status {
         position: absolute;
@@ -177,6 +198,16 @@ $color-grey-5: #AAAAAA;
     }
 }
 
+@include tablet{
+    .fooh-view-ordrs{
+        &__products{
+            .fooh-cart-card__cnt_right{
+                flex-direction: column;
+            }
+        }
+    }
+}
+
 @include mobile {
     .fooh-view-ordrs{
         &__adrs{
@@ -193,6 +224,12 @@ $color-grey-5: #AAAAAA;
                 margin-bottom: $spacer-1;
             }
         }
+
+        &__products{
+            .fooh-cart-card__cnt_left{
+                width: 100%;
+            }
+        }
         .fooh-cart-card{
             padding-left: $spacer-0;
             padding-right: $spacer-0;
@@ -202,12 +239,12 @@ $color-grey-5: #AAAAAA;
             padding: $spacer-0;
         }
         &__order-progress {
-            padding: $spacer-4 $spacer-2;
             margin-bottom: 0;
         }
         &__progress-wrap{
             flex-direction: column;
             align-items: flex-start;
+            padding: $spacer-3 $spacer-2;
         }
         &__line {
             height: 70px;
