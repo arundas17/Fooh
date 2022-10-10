@@ -35,7 +35,21 @@
             font-weight: 400;
             margin-bottom: 0;
         }
+        .fooh-input__wrap--email{
+            width: 33% !important;
+        }
+        .devlivery-adrs-form-card__input-wrap .fooh-input__wrap{
+            width: 33% !important;
+        }
     }
+}
+
+@include mobile-tablet{
+    .fooh-edit-add{
+        .devlivery-adrs-form .devlivery-adrs-form-card__input-wrap .fooh-input__wrap{
+            width: 100% !important;
+        }
+    }  
 }
 
 @include mobile{
@@ -45,6 +59,9 @@
                 flex-direction: column;
                 align-items: flex-start;
             }
+        }
+        .devlivery-adrs-form .devlivery-adrs-form-card__input-wrap .fooh-input__wrap{
+            width: 100% !important;
         }
     }  
 }
