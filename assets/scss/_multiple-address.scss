@@ -1,0 +1,27 @@
+.fooh-multiple-adrs{
+    &__add-adrs-sec{
+        display: flex;
+    }
+    .fooh-delivery-adrs-card__edit.add-address{
+        border-bottom: 1px solid $black;
+        margin-bottom: $spacer-4;
+        margin-left: auto;
+    }
+    &__billing-adrs, &__office-adrs{
+        border-top: 3px solid $yellow;
+        background-color: $grey;
+        padding: $spacer-4 $spacer-4 $spacer-4 $spacer-5;
+        margin-top: $spacer-4;
+    }
+    .fooh-delivery-adrs-card__edit{
+        display: inline-flex;
+    }
+    .fooh-delivery-adrs-card__head{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $spacer-2;
+    }
+    .fooh-delivery-adrs-card__head h2{
+        margin-bottom: $spacer-0 !important;
+    }
+}
