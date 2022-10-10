@@ -8,10 +8,12 @@
         margin-left: auto;
     }
     &__billing-adrs, &__office-adrs{
+        border-radius: 5px;
         border-top: 3px solid $yellow;
         background-color: $grey;
         padding: $spacer-4 $spacer-4 $spacer-4 $spacer-5;
-        margin-top: $spacer-4;
+        width: calc(50% - 16px);
+        margin: $spacer-4 8px;
     }
     .fooh-delivery-adrs-card__edit{
         display: inline-flex;
@@ -23,5 +25,23 @@
     }
     .fooh-delivery-adrs-card__head h2{
         margin-bottom: $spacer-0 !important;
+    }
+    .fooh-adrs-grids{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -8px;
+    }
+}
+
+@include mobile{
+    .fooh-multiple-adrs{
+        .fooh-adrs-grids{
+            flex-direction: column;
+            margin: 0;
+        }
+        &__billing-adrs, &__office-adrs{
+            width: 100%;
+            margin: $spacer-3 0 0 0;
+        }
     }
 }
