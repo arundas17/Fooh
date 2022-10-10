@@ -1,0 +1,50 @@
+.fooh-edit-add{
+    .devlivery-adrs-form{
+        &__checks-wrap{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: $spacer-4;
+            margin-bottom: $spacer-4;
+        }
+        .fooh-reg__checkbox-outer, 
+        .fooh-input__radio{
+            margin-right: $spacer-6;
+            margin-bottom: $spacer-2;
+        }
+        .fooh-reg__checkbox-outer input[type=checkbox]+label{
+            font-size: 14px;
+            font-weight: 400;
+            color: $black;
+            margin-left: 25px;
+        }
+        .fooh-reg__checkbox-outer input[type=checkbox]+label::before{
+            left: -25px;
+            width: 18px;
+            height: 18px;
+            border-width: 2px;
+        }
+        .fooh-reg__checkbox-outer input[type=checkbox]:checked+label::after{
+            left: -19px;
+            top: 3px;
+            width: 6px;
+            height: 10px;
+        }
+        .fooh-input__radio label{
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include mobile{
+    .fooh-edit-add{
+        .devlivery-adrs-form{
+            &__checks-wrap{
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    }  
+}
