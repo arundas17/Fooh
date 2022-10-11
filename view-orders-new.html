@@ -21,22 +21,43 @@
     <div class="container">
         <!-- view orders start -->
         <div class="fooh-view-ordrs">
-            <div class="fooh-view-ordrs__page-head">Order</div>
-            <div class="fooh-view-ordrs__adrs">
-                <div class="fooh-view-ordrs__adrs-head"><b>Delivery Address</b></div>
-                <div class="fooh-view-ordrs__adrs-row">
-                    <div class="fooh-view-ordrs__adrs-left">Mr./Ms</div>
-                    <div class="fooh-view-ordrs__adrs-right">Order : <span>16982</span></div>
-                </div>
-                <div class="fooh-view-ordrs__adrs-row">
-                    <div class="fooh-view-ordrs__adrs-left">Green Valley,qqqqq-686667</div>
-                    <div class="fooh-view-ordrs__adrs-right">Order Date : <span>Aug 16 2022 9:50 AM</span></div>
-                </div>
-                <div class="fooh-view-ordrs__adrs-row">
-                    <div class="fooh-view-ordrs__adrs-left">Phone Number: <span>652535751</span></div>
-                    <div class="fooh-view-ordrs__adrs-right">Status : <span>Order Placed</span></div>
-                </div>
+            <div class="fooh-view-ordrs__page-title">
+                <b>Orders</b>
             </div>
+            <div class="fooh-view-ordrs__adrs-card">
+                <div class="fooh-view-ordrs__st-detail">
+                    <div class="fooh-view-ordrs__st-row">
+                        <div class="fooh-view-ordrs__lbl">Order : </div>
+                        <div class="fooh-view-ordrs__val">16982</div>
+                    </div>
+                    <div class="fooh-view-ordrs__st-row">
+                        <div class="fooh-view-ordrs__lbl">Order Date : </div>
+                        <div class="fooh-view-ordrs__val">Aug 16 2022 9:50 AM</div>
+                    </div>
+                </div>
+                <div class="fooh-view-ordrs__adrss">
+                    <div class="fooh-delivery-adrs-card__bottom">
+                        <div><b>Billing Address</b></div>
+                        <p class="fooh-delivery-adrs__name"><b>Mr./Ms</b></p>
+                        <div class="fooh-delivery-adrs-card__delivery-info">
+                            <div>42546, Gandi Nagar, Mumbai, Padel Devgad</div>
+                            <div>Maharashtra, Badapur,</div>
+                            <div>Maharashtra, India- 1475688</div>
+                            <div>PH: 9746728682</div>
+                        </div>
+                    </div>
+                    <div class="fooh-delivery-adrs-card__bottom">
+                        <div><b>Billing Address</b></div>
+                        <p class="fooh-delivery-adrs__name"><b>Mr./Ms</b></p>
+                        <div class="fooh-delivery-adrs-card__delivery-info">
+                            <div>42546, Gandi Nagar, Mumbai, Padel Devgad</div>
+                            <div>Maharashtra, Badapur,</div>
+                            <div>Maharashtra, India- 1475688</div>
+                            <div>PH: 9746728682</div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
             <!-- products wrap starts here -->
             <div class="fooh-view-ordrs__products">
                 <!-- product 1 starts here -->
@@ -77,7 +98,7 @@
                     <div class="fooh-view-ordrs__order-progress">
                         <ul class="fooh-view-ordrs__progress-wrap">
                             <li class="fooh-view-ordrs__circle active">
-                                <p class="fooh-view-ordrs__status">Ordered</p>
+                                <p class="fooh-view-ordrs__status">Order Placed</p>
                                 <div class="fooh-view-ordrs__date">
                                     <p class="fooh-view-ordrs__day">Aug 16 2022</p>
                                     <p class="fooh-view-ordrs__time">9:45 AM</p>
@@ -85,11 +106,15 @@
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
-                                <p class="fooh-view-ordrs__status">Delivery assigned</p>
+                                <p class="fooh-view-ordrs__status">Order approved</p>
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
-                                <p class="fooh-view-ordrs__status">Order Dispatched</p>
+                                <p class="fooh-view-ordrs__status">Ready for shipment</p>
+                            </li>
+                            <li class="fooh-view-ordrs__line"></li>
+                            <li class="fooh-view-ordrs__circle">
+                                <p class="fooh-view-ordrs__status">Shipment picked up</p>
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
@@ -138,7 +163,7 @@
                     <div class="fooh-view-ordrs__order-progress">
                         <ul class="fooh-view-ordrs__progress-wrap">
                             <li class="fooh-view-ordrs__circle active">
-                                <p class="fooh-view-ordrs__status">Ordered</p>
+                                <p class="fooh-view-ordrs__status">Order Placed</p>
                                 <div class="fooh-view-ordrs__date">
                                     <p class="fooh-view-ordrs__day">Aug 16 2022</p>
                                     <p class="fooh-view-ordrs__time">9:45 AM</p>
@@ -146,11 +171,15 @@
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
-                                <p class="fooh-view-ordrs__status">Delivery assigned</p>
+                                <p class="fooh-view-ordrs__status">Order approved</p>
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
-                                <p class="fooh-view-ordrs__status">Order Dispatched</p>
+                                <p class="fooh-view-ordrs__status">Ready for shipment</p>
+                            </li>
+                            <li class="fooh-view-ordrs__line"></li>
+                            <li class="fooh-view-ordrs__circle">
+                                <p class="fooh-view-ordrs__status">Shipment picked up</p>
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
@@ -199,7 +228,7 @@
                     <div class="fooh-view-ordrs__order-progress">
                         <ul class="fooh-view-ordrs__progress-wrap">
                             <li class="fooh-view-ordrs__circle active">
-                                <p class="fooh-view-ordrs__status">Ordered</p>
+                                <p class="fooh-view-ordrs__status">Order Placed</p>
                                 <div class="fooh-view-ordrs__date">
                                     <p class="fooh-view-ordrs__day">Aug 16 2022</p>
                                     <p class="fooh-view-ordrs__time">9:45 AM</p>
@@ -207,11 +236,15 @@
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
-                                <p class="fooh-view-ordrs__status">Delivery assigned</p>
+                                <p class="fooh-view-ordrs__status">Order approved</p>
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
-                                <p class="fooh-view-ordrs__status">Order Dispatched</p>
+                                <p class="fooh-view-ordrs__status">Ready for shipment</p>
+                            </li>
+                            <li class="fooh-view-ordrs__line"></li>
+                            <li class="fooh-view-ordrs__circle">
+                                <p class="fooh-view-ordrs__status">Shipment picked up</p>
                             </li>
                             <li class="fooh-view-ordrs__line"></li>
                             <li class="fooh-view-ordrs__circle">
@@ -243,7 +276,7 @@
                 </div>
             </div>
             <div class="fooh-view-ordrs__back-to-order">
-                    <a href="" class="fooh-btn">Back To Orders</a>
+                <a href="" class="fooh-btn">Back To Orders</a>
             </div>
         </div>
         <!-- view orders end -->
