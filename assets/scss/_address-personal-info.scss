@@ -105,6 +105,9 @@
         justify-content: space-between;
         margin-bottom: 8px;
     }
+    .fooh-delivery-adrs-card__set--0::after{
+        bottom: 0px;
+    }
 }
 
 @include mobile{
