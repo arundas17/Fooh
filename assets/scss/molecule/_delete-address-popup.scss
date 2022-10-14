@@ -1,0 +1,32 @@
+.fooh-delete-address-popup{
+    &.modal.fade{
+        opacity: 0;
+    }
+    &.modal.fade.show{
+        opacity: 1;
+        display: flex !important;
+        align-items: center;
+    }
+    .modal-dialog{
+       transform: translate(0) !important; 
+       max-width: 500px;
+    }
+    .modal-content{
+        border: none;
+        border-top: 3px solid $yellow;
+        border-radius: 5px;
+    }
+    .modal-title{
+        text-align: center;
+    }
+    .modal-actions{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: $spacer-4;
+    }
+    .modal-action{
+        min-width: 30%;
+        text-align: center;
+    }
+}

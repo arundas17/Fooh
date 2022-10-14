@@ -18,6 +18,7 @@
 @import "view-orders";
 @import "edit-or-add-address";
 @import "multiple-address";
+@import "address-personal-info";
 @import "dev";
 // atom
 @import "atom/button";
@@ -28,6 +29,7 @@
 @import "molecule/cart-card";
 @import "molecule/cart-summary-card";
 @import "molecule/notification-order";
+@import "molecule/delete-address-popup";
 // organism
 @import "checkout";
 @import "address-personal-info";

@@ -21,30 +21,37 @@ $color-grey-5: #AAAAAA;
 
 
 .fooh-view-ordrs{
-    &__page-head{
-        font-weight: 700;
-        font-size: 30px;
-        margin-bottom: $spacer-4;
+    &__page-title{
+        font-size: 20px;
+        margin-bottom: $spacer-3;
     }
-    &__adrs{
-        &-head{
-            margin-bottom: $spacer-4;
-        }
-        .fooh-view-ordrs__adrs-row{
-            display: flex;
-            font-weight: 500;
-            margin-bottom: $spacer-3;
-        }
-        .fooh-view-ordrs__adrs-left{
-            width: 70%;
-        }
-        .fooh-view-ordrs__adrs-right{
-            display: flex;
-            flex-wrap: wrap;
-            width: 30%;
-        }
+    &__adrs-card{
+        border-top: 3px solid $yellow;
+        border-radius: 5px;
+        background-color: $grey;
+        padding: $spacer-3;
+        padding-left: $spacer-5;
     }
-
+    &__st-detail{
+        .fooh-view-ordrs__lbl, .fooh-view-ordrs__val{
+            display: inline-block;
+        }
+        .fooh-view-ordrs__val{
+            font-weight: 700;
+        }    
+    }
+    .fooh-view-ordrs__adrss{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: $spacer-5;
+    }
+    .fooh-delivery-adrs-card__bottom{
+        width: 50%;
+    }
+    .fooh-delivery-adrs__name{
+        font-size: 14px;
+        margin-top: $spacer-2;        
+    }
     .fooh-cart-card__wrapper{
         width: 100%;
         &:last-child{
@@ -210,21 +217,13 @@ $color-grey-5: #AAAAAA;
 
 @include mobile {
     .fooh-view-ordrs{
-        &__adrs{
-            .fooh-view-ordrs__adrs-row{
-                flex-direction: column;
-                margin-bottom: $spacer-1;
-            }
-            .fooh-view-ordrs__adrs-left{
-                width: 100%;
-                margin-bottom: $spacer-1;
-            }
-            .fooh-view-ordrs__adrs-right{
-                width: 100%;
-                margin-bottom: $spacer-1;
-            }
+        .fooh-view-ordrs__adrss{
+            flex-direction: column;
         }
-
+        .fooh-delivery-adrs-card__bottom{
+            width: 100%;
+            margin-bottom: $spacer-3;
+        }
         &__products{
             .fooh-cart-card__cnt_left{
                 width: 100%;

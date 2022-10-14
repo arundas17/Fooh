@@ -46,8 +46,12 @@
 
 @include mobile-tablet{
     .fooh-edit-add{
+        .devlivery-adrs-form .devlivery-adrs-form-card__input-wrap{
+            margin-bottom: 24px;
+        }
         .devlivery-adrs-form .devlivery-adrs-form-card__input-wrap .fooh-input__wrap{
             width: 100% !important;
+            padding-right: 0;
         }
     }  
 }
