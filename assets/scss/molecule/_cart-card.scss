@@ -26,6 +26,8 @@
         border: 1px solid #CCCCCC;
         border-radius: 5px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
     }
     &__img{
         width: 100%;
@@ -146,6 +148,12 @@
             margin: 0 8px;
             text-align: center;
         }
+    }
+
+    &__qnt-left{
+        color: #E1450A;
+        font-weight: 500;
+        margin-bottom: 4px;
     }
 }
 
