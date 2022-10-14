@@ -44,7 +44,7 @@
             width: 50%;
         }
 
-        &_head{
+        &_head, &__head a{
             font-size: 16px;
             font-weight: 700;
             color: #333333;
@@ -154,6 +154,46 @@
         color: #E1450A;
         font-weight: 500;
         margin-bottom: 4px;
+    }
+}
+
+@include tablet{
+    .fooh-cart-card{
+        &__left{
+            width: 30%;
+        }
+
+        &__cnt{
+            flex-direction: column;
+
+            &_head, &_head a{
+                min-height: unset;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            &_price{
+                font-size: 14px;
+                margin: 8px 0;
+            }
+
+            &_total{
+                font-size: 12px;
+            }
+
+            &_left{
+                width: 100%;
+            }
+
+            &-qnty{
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            &_right{
+                width: 100%;
+            }
+        }
     }
 }
 
