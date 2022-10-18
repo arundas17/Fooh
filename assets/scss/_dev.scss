@@ -121,7 +121,7 @@
     display: block;
 }
 
-.fooh-dlt-fc-pop{
+#ctl27_popConfirm_PW-1{
     border-top: 3px solid #ffce00;
     border-radius: 5px;
     overflow: hidden;
@@ -144,7 +144,7 @@
 }
 
 @media (max-width: 767px){
-    .fooh-dlt-fc-pop{
+    #ctl27_popConfirm_PW-1{
         width: 90% !important;
         left: 50% !important;
         transform: translate(-50%) !important;
