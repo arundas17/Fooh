@@ -26,6 +26,8 @@
         border: 1px solid #CCCCCC;
         border-radius: 5px;
         overflow: hidden;
+        display: flex;
+        align-items: center;
     }
     &__img{
         width: 100%;
@@ -42,7 +44,7 @@
             width: 50%;
         }
 
-        &_head{
+        &_head, &_head a{
             font-size: 16px;
             font-weight: 700;
             color: #333333;
@@ -145,6 +147,52 @@
             background-color: #D3D3D3;
             margin: 0 8px;
             text-align: center;
+        }
+    }
+
+    &__qnt-left{
+        color: #E1450A;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+}
+
+@include tablet{
+    .fooh-cart-card{
+        &__left{
+            width: 30%;
+        }
+
+        &__cnt{
+            flex-direction: column;
+
+            &_head, &_head a{
+                min-height: unset;
+                font-size: 14px;
+                font-weight: 600;
+            }
+
+            &_price{
+                font-size: 14px;
+                margin: 8px 0;
+            }
+
+            &_total{
+                font-size: 12px;
+            }
+
+            &_left{
+                width: 100%;
+            }
+
+            &-qnty{
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+
+            &_right{
+                width: 100%;
+            }
         }
     }
 }
