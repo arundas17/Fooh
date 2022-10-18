@@ -52,6 +52,45 @@ $color-grey-5: #AAAAAA;
     }
 }
 
+.fooh-admin{
+    .btn-yellow{
+        background: $yellow;
+
+        color: $white;
+        min-width: 150px !important;
+        &:hover{
+            background: #ffce00;
+        }
+        &--grn{
+            background: #009000;
+            color: $white;
+            &:hover{
+                background: #03d403;;
+            }
+        }
+    }
+    .navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus{
+        background-color: $yellow !important;
+        color: $white !important;
+    }
+    #side-menu{
+        .collapse.in{
+            background-color: $yellow !important;
+        }
+    }
+    .dxWeb_edtCheckBoxUnchecked_Moderno{
+        background-image: url(http://fooh.strat-staging.com/DXR.axd?r=0_2775-VNRap);
+    }
+    .dxWeb_edtCheckBoxChecked_Moderno{
+        background-image: url(http://fooh.strat-staging.com/DXR.axd?r=0_2775-VNRap);
+    }
+    #ctl00_ContentPlaceHolder1_ProductList_frame,
+    #ctl00_ContentPlaceHolder1_MerchantList_frame{
+        height: 900px;
+    }
+    
+}
+
 .fooh-view-ordrs{
     &__page-title{
         font-size: 20px;
@@ -327,4 +366,41 @@ $color-grey-5: #AAAAAA;
             text-align: left;
         }
     }
+}
+
+#ctl00_ContentPlaceHolder1_ProductBoostListing_GridEachOrder{
+    border-radius: 5px;
+    border-top: 3px solid $yellow;
+    background-color: #efefef;
+    padding: $spacer-5;
+    margin: $spacer-4 0;
+}
+
+#ctl00_ContentPlaceHolder1_ProductBoostListing_GridEachOrder_DXMainTable.dxgvTable_Material{
+    border-radius: 0px;
+    box-shadow: none !important;
+    border-color: $black !important;
+}
+
+#ctl00_ContentPlaceHolder1_ProductBoostListing_GridEachOrder_DXMainTable.dxgvTable_Material .dxgvHeader_Material{
+    border-color: $black !important;
+    background-color: #efefef !important;
+}
+
+#ctl00_ContentPlaceHolder1_ProductBoostListing_GridEachOrder_DXMainTable {
+    & .dxgvDataRow_Material td.dxgv{
+        border-color: $black !important;
+        background-color: #efefef !important;
+    }
+    & .btn-update-sts{
+        color: $white;   
+        background-color: $yellow;
+        padding: $spacer-1 $spacer-3;
+        white-space: nowrap;
+        border-radius: 5px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
 }
