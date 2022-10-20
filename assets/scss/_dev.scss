@@ -150,3 +150,15 @@
         transform: translate(-50%) !important;
     }
 }
+
+.fooh-input__input-txt select {
+  border: 1px solid $black;
+  &:focus{
+      border: 1px solid $black;
+  }
+}
+.fooh-table-clr{
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+}
