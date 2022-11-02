@@ -6,7 +6,7 @@
         border-top: 2px solid #fea72d;
         border-radius: 5px;
         background-color: #e8e8e8;
-        margin: 24px 8px;
+        margin: 24px 0px;
         &-head{
             font-size: 20px;
             font-weight: 600;
@@ -98,6 +98,7 @@
     .fooh-adrs-grids{
         display: flex;
         flex-wrap: wrap;
+        margin: 0 -8px;
     }
 
     .fooh-delivery-adrs-card__head{

@@ -338,7 +338,23 @@ $color-grey: #e8e8e8;
     .header .curved-menu .dropdown-menu li a{
         color: $color-white;
     }
-    .search-wrap .cart{
+    .search-wrap .cart, #ctl25_pnlMerchant{
+        position: relative;
+        display: block;
+        width: 50px;
+        #ShoppingCartPTotal, #ctl25_ShoppingCartPTotal{
+            position: absolute;
+            display: block !important;
+            background: #cd1f36;
+            text-align: center;
+            color: #fff;
+            top: -7px;
+            right: -3px;
+            min-width: 20px;
+            border-radius: 50%;
+            font-size: .75em;
+            text-align: center;
+        }
         svg{
             width: 40px;
             height: auto;
