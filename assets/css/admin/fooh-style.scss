@@ -150,7 +150,8 @@ $color-grey-5: #AAAAAA;
     }
     .fooh-delivery-adrs__name{
         font-size: 14px;
-        margin-top: $spacer-2;        
+        margin-top: $spacer-2; 
+        margin-bottom: 0;       
     }
     .fooh-cart-card__wrapper{
         width: 100%;
@@ -209,6 +210,7 @@ $color-grey-5: #AAAAAA;
         justify-content: space-between;
         font-weight: 500;
         margin-bottom: $spacer-3;
+        text-align: right;
     }
     &__amnt-lbl{
         width: 70%;
@@ -605,5 +607,47 @@ $color-grey-5: #AAAAAA;
         .visible{
             display: inline-block !important;
         }
+    }
+}
+
+// fooh admin popup
+.fooh-admin-manage-order-popup{
+    width: 100% !important;
+    max-width: 450px;
+    z-index: 12000;
+    visibility: visible;
+    display: block !important;
+    position: absolute;
+    height: 0px;
+    left: 30% !important;
+    top: 50% !important;
+    .dxpc-mainDiv.dxpc-shadow{
+        border-top: 3px solid #fea72d;
+        border-radius: 3px;
+    }
+    .fooh-btn.fooh-btn--outlined{
+        &:hover{
+            color: #ffffff;
+            .button-icon{
+                color: #ffffff;
+            }
+        }
+    }
+    &__btn-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@include tablet{
+    .fooh-admin-manage-order-popup{
+        left: 20% !important;
+    }
+}
+
+@include mobile{
+    .fooh-admin-manage-order-popup{
+        left: 0 !important;
     }
 }
