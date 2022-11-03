@@ -63,7 +63,26 @@
     &:hover{
         background-color: rgba(51, 51, 51, 0.1);
     }
+}
 
+.fooh-notification__btn{
+    &-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fooh-btn{
+            cursor: pointer;
+            margin: 10px;
+            &--load-more,&--load-less{
+                display: none;
+            }
+        }
+        .visible{
+            display: inline-block !important;
+        }
+    }
 }
 
 @media (max-width: 668px){
