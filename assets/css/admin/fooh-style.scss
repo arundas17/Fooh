@@ -584,3 +584,24 @@ $color-grey-5: #AAAAAA;
         margin-right: 5px;
     }
 }
+
+// 03-11-2022 -- admin notification load more
+.fooh-notification__btn{
+    &-wrapper{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .fooh-btn{
+            cursor: pointer;
+            margin: 10px;
+            &--load-more,&--load-less{
+                display: none;
+            }
+        }
+        .visible{
+            display: inline-block !important;
+        }
+    }
+}
