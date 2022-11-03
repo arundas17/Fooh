@@ -528,6 +528,7 @@ $color-grey-5: #AAAAAA;
         }
     }
     &__cnt{
+        font-size: 16px;
         font-weight: 500;
         margin-bottom: 15px;
     }
@@ -537,6 +538,7 @@ $color-grey-5: #AAAAAA;
 
     &__link{
         color: #1F1083;
+        font-size: 16px;
         font-weight: bold;
         padding-right: 25px;
         position: relative;
@@ -570,5 +572,15 @@ $color-grey-5: #AAAAAA;
         &__right{
             padding: 10px;
         }
+    }
+}
+
+.preheader-not{
+    display: flex;
+    align-items: baseline;
+    svg{
+        height: 12px;
+        width: 12px;
+        margin-right: 5px;
     }
 }

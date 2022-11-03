@@ -338,11 +338,11 @@ $color-grey: #e8e8e8;
     .header .curved-menu .dropdown-menu li a{
         color: $color-white;
     }
-    .search-wrap .cart, #ctl25_pnlMerchant{
+    .search-wrap .cart, #ctl25_pnlMerchant .cart{
         position: relative;
         display: block;
         width: 50px;
-        #ShoppingCartPTotal, #ctl25_ShoppingCartPTotal{
+        #ShoppingCartPTotal, #ShoppingTotal{
             position: absolute;
             display: block !important;
             background: #cd1f36;
