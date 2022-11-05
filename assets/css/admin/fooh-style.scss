@@ -207,16 +207,17 @@ $color-grey-5: #AAAAAA;
     }
     &__amnt-row{
         display: flex;
+        width: 50%;
         justify-content: space-between;
         font-weight: 500;
         margin-bottom: $spacer-3;
-        text-align: right;
+        margin-left: auto;
     }
     &__amnt-lbl{
-        width: 70%;
+        width: 64%;
     }
     &__amnt-val{
-        width: 30%;
+        flex: 1;
     }
     &__order-progress {
         width: 90%;
@@ -328,6 +329,9 @@ $color-grey-5: #AAAAAA;
                 flex-direction: column;
             }
         }
+        &__amnt-row{
+            width: 90%;
+        }
     }
 }
 
@@ -391,6 +395,9 @@ $color-grey-5: #AAAAAA;
         &__time{
             font-size: 13px;
             text-align: left;
+        }
+        &__amnt-row{
+            width: 100%;
         }
     }
 }
@@ -609,45 +616,63 @@ $color-grey-5: #AAAAAA;
         }
     }
 }
-
+// 04-11-2022
 // fooh admin popup
-.fooh-admin-manage-order-popup{
-    width: 100% !important;
-    max-width: 450px;
-    z-index: 12000;
-    visibility: visible;
-    display: block !important;
-    position: absolute;
-    height: 0px;
-    left: 30% !important;
-    top: 50% !important;
-    .dxpc-mainDiv.dxpc-shadow{
-        border-top: 3px solid #fea72d;
-        border-radius: 3px;
-    }
-    .fooh-btn.fooh-btn--outlined{
-        &:hover{
-            color: #ffffff;
-            .button-icon{
-                color: #ffffff;
+.ibox{
+    .ibox-content{
+        .row{
+            #ctl00_ContentPlaceHolder1_ProductBoostListing_popUpgrade_PW-1{
+                width: 100% !important;
+                max-width: 450px;
+                z-index: 12000;
+                visibility: visible;
+                display: block !important;
+                position: absolute;
+                height: 0px;
+                left: 30% !important;
+                top: 50% !important;
+                .dxpc-mainDiv.dxpc-shadow{
+                    border-top: 3px solid #fea72d;
+                    border-radius: 3px;
+                }
+                .fooh-btn.fooh-btn--outlined{
+                    &:hover{
+                        color: #ffffff;
+                        .button-icon{
+                            color: #ffffff;
+                        }
+                    }
+                }
+                .fooh-admin-manage-order-popup__btn-wrap{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
-    &__btn-wrap{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
+} 
 
 @include tablet{
-    .fooh-admin-manage-order-popup{
-        left: 20% !important;
+    .ibox{
+        .ibox-content{
+            .row{
+                #ctl00_ContentPlaceHolder1_ProductBoostListing_popUpgrade_PW-1{
+                    left: 20% !important;
+                }
+            }
+         }
     }
 }
 
 @include mobile{
-    .fooh-admin-manage-order-popup{
-        left: 0 !important;
+    .ibox{
+        .ibox-content{
+            .row{
+                #ctl00_ContentPlaceHolder1_ProductBoostListing_popUpgrade_PW-1{
+                    left: 0 !important;
+                }
+            }
+         }
     }
 }
