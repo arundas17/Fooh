@@ -500,6 +500,23 @@ $color-grey-5: #AAAAAA;
     }
 } 
 
+// 05-11-2022
+.fooh-notification-order-wrapper{
+    table,
+    td{
+        padding: 0 !important;
+    }
+    #ctl00_ContentPlaceHolder1_EnquiryList_CardViewProducts_DXMainTable{
+        border: none !important;
+    }
+    .dxbplc{
+        .dxcvBreakpointsCard_Moderno{
+            margin: 0 !important;
+            border: 0 !important;
+            background-color: transparent;
+        }
+    }
+}
 // 02-11-22 notification
 .fooh-notification-order{
     width: 100%;
