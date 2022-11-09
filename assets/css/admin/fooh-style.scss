@@ -526,6 +526,7 @@ $color-grey-5: #AAAAAA;
     justify-content: flex-start;
     margin-top: 20px;
     border: 1px solid #CCCCCC;
+    border-top: 3px solid $yellow;
     &__left{
         width: 20%;
         max-width: 120px;
@@ -606,6 +607,7 @@ $color-grey-5: #AAAAAA;
 .preheader-not{
     display: flex;
     align-items: baseline;
+    color: $color-grey-4 !important;
     svg{
         height: 12px;
         width: 12px;
@@ -691,5 +693,20 @@ $color-grey-5: #AAAAAA;
                 }
             }
          }
+    }
+}
+
+// 08-11-22 notification pagination
+.fooh-notification.pagination.center-block{
+    display: flex !important;
+    justify-content: center !important;
+    li a, li span{
+        float: none !important;
+        border: none;
+    }
+    li span a{
+        text-align: center;
+        color: black;
+        font-weight: 500;
     }
 }
