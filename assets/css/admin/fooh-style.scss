@@ -710,3 +710,31 @@ $color-grey-5: #AAAAAA;
         font-weight: 500;
     }
 }
+
+// 08-12-22 price table
+.fooh-price-table.price-table{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    & > li{
+        border-bottom: none;
+        float: none;
+    }
+    & > li > ul{
+        display: flex;
+        & > li{
+            float: none;
+            width: 18.75%;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            &:first-child{
+                width: 25%;
+            }
+        }
+        .tick{
+            width: 15px;
+            height: 15px;
+            background-size: contain;
+            background-position: center;
+        }
+    }
+}

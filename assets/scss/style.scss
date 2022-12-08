@@ -1,13 +1,10 @@
 
 // base
 @import "base/colors";
-
-// 
 @import "header";
 @import "product-slider";
 @import "footer-newsletter";
 @import "my-profile";
-// @import "admin";
 @import "fooh-login";
 @import "registration-form";
 @import "input-tag";
@@ -20,6 +17,8 @@
 @import "multiple-address";
 @import "address-personal-info";
 @import "dev";
+@import "checkout";
+@import "address-personal-info";
 // atom
 @import "atom/button";
 // molecule
@@ -31,6 +30,3 @@
 @import "molecule/notification-order";
 @import "molecule/delete-address-popup";
 // organism
-@import "checkout";
-@import "address-personal-info";
-//molecules
