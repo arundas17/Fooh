@@ -189,25 +189,6 @@
         height: 100%;
     }
 }
-// 15-12-2022
-.banner-side{
-    height: 480px;
-    padding: 0 20px;
-    margin: 0;
-}
-.register .profilepic{
-    width: 100px;
-}
-#ctl28_Web_ProfileSummary_lblName{
-    @include turnicate(1);
-    min-height: 12px;
-}
-.carousel-inner.home-banners .item{
-    height: 480px;
-    img{
-        height: 100%;
-    }
-}
 // 27-12-2022
 .fooh-profile__tabs li a{
     font-size: 12px !important;
