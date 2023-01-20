@@ -1,0 +1,38 @@
+.fooh-transfail{
+   &__content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 52px 0;
+   }
+   &__title{
+      font-size: 42px;
+      font-weight: 700;
+      color: $yellow;
+   }
+   &__img{
+      height: 350px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+   }
+   &__desc{
+      font-size: 18px;
+      font-weight: 400;
+      margin-bottom: 32px;
+   }
+   .fooh-btn{
+      min-width: 250px;
+   }
+}
+
+@media (max-width: 768px) {
+   .fooh-transfail{
+      &__content{
+         padding: 32px 0;
+      }
+      &__title{
+         font-size: 28px;
+      }
+   }
+}
