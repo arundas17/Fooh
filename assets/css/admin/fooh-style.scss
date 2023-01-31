@@ -716,6 +716,7 @@ $color-grey-5: #AAAAAA;
     display: block;
     width: 100%;
     padding: 10px 20px;
+    overflow-x: auto;
     & > li{
         border-bottom: none;
         float: none;
@@ -726,6 +727,7 @@ $color-grey-5: #AAAAAA;
             float: none;
             width: 18.75%;
             border-bottom: 1px solid rgb(255, 255, 255);
+            min-width: 140px;
             &:first-child{
                 width: 25%;
             }
@@ -738,8 +740,103 @@ $color-grey-5: #AAAAAA;
         }
     }
 }
+
+@media (max-width: 768px){
+.fooh-price-table.price-table{
+    padding: 10px 0;
+}
+}
+
 // 27-12-22 navbar top links
 .navbar-top-links li#ctl00_chatControl_liUpgrade {
     margin-right: 40px; 
-  }
-  
+}
+
+#ctl00_ContentPlaceHolder1_GridModerations .dxgvDataRow_Moderno td.dxgv{
+    padding: 8px 4px;
+}
+
+#ctl00_ContentPlaceHolder1_pnlSupplier .notify{
+    padding: 24px 0;
+}
+
+.py-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.px-16{
+    padding-right: 16px;
+    padding-left: 16px;
+}
+
+.fooh-admin .fooh-admin__action-crd{
+    margin-top: 24px;
+    a:first-child{
+        color: rgb(0, 0, 0);
+        display: block;
+    }
+    p.msg-count{
+        display: block !important;
+        background: #cd1f36;
+        color: #fff;
+        position: absolute;
+        top: -7px;
+        right: 40%;
+        width: 16px;
+        padding: 3px 0;
+        border-radius: 50%;
+        font-size: .75em;
+    } 
+}
+
+.dxgvTable_Moderno{
+    border: solid 1px #d1d1d1 !important;
+}
+
+.fooh-admin .view-btn{
+    min-width: auto !important;
+}
+
+// subscription success
+.fooh-subsuccess{
+    width: 100%;
+    min-height: 120vh;
+    &__title{
+        font-size: 35px;
+        font-weight: bold;
+        color: #fea72d;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__img-container{
+        width: 100%;
+        display: flex;
+    }
+    &__img{
+        max-width: 550px;
+        margin: 0 auto;
+        display: block;
+    }
+    &__cnt{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 500;
+        .fooh-btn{
+            display: block;
+            margin:  20px auto;
+            max-width: 200px;
+        }
+    }
+}
+
+@include mobile{
+    .fooh-subsuccess{
+        &__title{
+            font-size: 32px;
+        }
+        &__img{
+            max-width: 100%;
+        }
+    }
+}

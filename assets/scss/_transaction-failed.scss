@@ -4,7 +4,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 52px 0;
+      padding: 16px 0;
    }
    &__title{
       font-size: 42px;
@@ -12,9 +12,8 @@
       color: $yellow;
    }
    &__img{
-      height: 350px;
-      margin-top: 32px;
-      margin-bottom: 32px;
+      height: 320px;
+      margin-top: 24px;
    }
    &__desc{
       font-size: 18px;
