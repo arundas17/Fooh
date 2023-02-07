@@ -162,24 +162,20 @@
     clear: both;
     justify-content: space-between;
 }
-// 22-10-22
 .hover .alignb{
     &--empty{
         bottom: 68px;
     }
 }
-// 26-10-22
 .px-20{
     padding-right: 20px;
     padding-left: 20px;
 }
-// 21-11-22
 @media (min-width: 768px){
     #ctl27_divCopmanyDataLit .dl-horizontal dd {
         margin-left: 250px;
     }
 }
-// 13-12-2022
 #fooh_sellercover{
     height: 325px;
     width: 100%;
@@ -189,20 +185,29 @@
         height: 100%;
     }
 }
-// 27-12-2022
 .fooh-profile__tabs li a{
     font-size: 12px !important;
 }
-
-// 24-01-2023
 @media (max-width: 767px){    
     .JoinUs-Wrap {
         width: auto;
     }
+    .products .price .btn-grey {
+        margin-bottom: 8px;
+        text-align: center;
+    }
 }
-
 @media (max-width: 620px){
     .header-scroll .header .logo{
         display: none;
+    }
+}
+.fooh-footer__paygt-logo{
+    width: 140px;
+    height: auto;
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
