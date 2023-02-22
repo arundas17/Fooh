@@ -577,7 +577,8 @@ $color-grey: #e8e8e8;
             cursor: pointer;
         }
         option{
-            background: #009000;
+            background: transparent;
+            color: $color-black;
             width: 100%;
             overflow: hidden;
             white-space: nowrap;

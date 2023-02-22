@@ -211,3 +211,13 @@
         object-fit: cover;
     }
 }
+
+.side-adv-banner{
+    margin-bottom: 10px;
+}
+
+.tab-content.myacc{
+    .collapse.navbar-collapse{
+        display: block !important;
+    }
+}
