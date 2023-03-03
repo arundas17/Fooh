@@ -171,6 +171,12 @@
     padding-right: 20px;
     padding-left: 20px;
 }
+
+.px-0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
 @media (min-width: 768px){
     #ctl27_divCopmanyDataLit .dl-horizontal dd {
         margin-left: 250px;
@@ -219,5 +225,74 @@
 .tab-content.myacc{
     .collapse.navbar-collapse{
         display: block !important;
+    }
+}
+
+@media (max-width: 767px){
+    .fh-supplier__pref-type,
+    .fh-supplier__bsns-type,
+    .fh-supplier__pref-country{
+        table{
+            table-layout: fixed;
+        }
+        td{
+            display: flex;
+        }
+    }
+}
+
+.myacc .btn-yellow{
+    width: auto !important;
+}
+
+.joincta{
+    display: none !important;
+}
+
+#divLogOut{
+    display: none !important;
+}
+
+.JoinUs-Wrap{
+    display: none !important;
+}
+
+.header-scroll .padr0{
+    padding-right: 0;
+}
+
+.registration .form-control{
+    font-size: 14px !important;
+}
+
+@media (max-width: 767px){
+    .header-scroll .header .search-wrap .search-scroll-wrap{
+        width: auto;
+    }
+    .footer .socialmedia {
+        top: 5%;
+        ul{
+            border-bottom: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 620px){
+    #divLogOut{
+        display: block !important;
+    }
+    .JoinUs-Wrap{
+        display:  block !important;
+    }
+}
+
+@media (max-width: 520px){
+    #divLogOut{
+        display: none !important;        
+    }
+    .footer .socialmedia {
+        top: 220px;
     }
 }

@@ -246,9 +246,6 @@ $color-grey: #e8e8e8;
         .header .navbar-toggle{
             z-index: 1;
         }
-        .login-scroll.floatHeadShow{
-            display: none !important;
-        }
         .fh-my-profile__box{
             left: 0;
         }
@@ -869,9 +866,6 @@ $color-grey: #e8e8e8;
         #header{
             .notify .dropdown-menu{
                 top: 94px !important;
-            }
-            .notify div > a > span{
-                margin: 5px 0 !important;
             }
             .curved-menu{
                 .dropdown-toggle{

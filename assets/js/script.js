@@ -129,4 +129,17 @@ order_details_btn.forEach((e,index)  => {
           "fooh-view-ordrs__order-progress--active"
         );
     });
-})
+});
+
+const categoriesLink = document.querySelectorAll('.categories .submenu a');
+
+categoriesLink.forEach((cate)=>{
+    cate.addEventListener('click', e =>{
+        const matchMedia = '(max-width: 600px)'
+        if(window.matchMedia(matchMedia).matches){
+            e.preventDefault();
+            e.stopPropagation();
+            console.log(cate.nextSibling);
+        }
+    });
+});
