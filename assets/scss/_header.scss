@@ -196,7 +196,8 @@ $color-grey: #e8e8e8;
             svg{
                 width: 30px;
                 height: auto;
-                padding-left: 4px;
+                padding: 4px;
+                padding-top: 0;
                 margin-top: 4px;
             }
         }
@@ -557,7 +558,7 @@ $color-grey: #e8e8e8;
             background: transparent;
             color: $color-white;
             width: 100%;
-            padding: 8px 16px;
+            padding: 8px 0px;
             font-weight: 700;
             border: 0;
             text-align: center;
