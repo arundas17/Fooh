@@ -44,7 +44,6 @@
     &__link{
         color: #1F1083;
         font-weight: bold;
-        padding-right: 25px;
         position: relative;
         display: inline-block;
         &_arrow{
@@ -91,6 +90,13 @@
         &__left{
             width: 100%;
             max-width: none;
+        }
+        &__img-container{
+            display: flex;
+        }
+        &__img{
+            width: 60%;
+            margin: 0 auto;
         }
         &__right{
             padding: 10px;

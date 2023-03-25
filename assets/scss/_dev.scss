@@ -389,6 +389,115 @@ label.fooh-input__label{
     }
 }
 
+.products .box{
+    .dxWeb_edtCheckBoxUnchecked_Moderno{
+        border: 1px solid hsl(0, 0%, 80%) !important;
+        margin-top: 4px !important;
+        background-image: none !important;
+    }
+    .dxWeb_edtCheckBoxChecked_Moderno{
+        border: 1px solid hsl(0, 0%, 80%) !important;
+        margin-top: 4px !important;
+        background-image: none !important;
+        position: relative !important;
+        &::after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -63%) rotate(45deg);
+            border-right: 2px solid hsl(48, 100%, 50%);
+            border-bottom: 2px solid hsl(48, 100%, 50%);
+            height: 13px;
+            width: 6px;
+        }
+    }
+}
+
+.fooh-prdt-addcart-pop{
+    border: none;
+    box-shadow: none;
+    border-top: 3px solid $yellow !important;
+    border-radius: 5px ;
+    .dxpc-header{
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: $black;
+        background: $white;
+    }
+    .dxpc-closeBtn{
+        &:hover{
+            background: $yellow;
+            border: none;
+        }
+    }
+    &__inpwrap{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .top{
+            display: flex;
+            align-items: center;
+        }
+        .wraplabel{
+            white-space: nowrap;
+            margin-right: $spacer-2;
+        }
+    }
+    #ctl26_popAddtoCart_RequiredFieldValidator1{
+        display: block;
+        margin-bottom: $spacer-2;
+    }
+    .input-quantity{
+        flex: 1;
+        border: 1px solid hsl(0, 0%, 80%);
+        padding: $spacer-2;
+        margin-top: $spacer-2;
+    }
+    &__actions{
+        display: flex;
+        margin: 0 -4px;
+        input[type="submit"]{
+            width: calc(50% - 8px);
+            padding: $spacer-2;
+            margin: 0 4px;
+            margin-bottom: $spacer-3;
+        }
+    }
+} 
+
+.rating {
+    text-align: left;
+    font-size: 16px;
+    width: auto;
+    margin-top: 16px;
+}
+
+.nameWrap{
+    font-size: 14px;
+    line-height: 1;
+    min-height: 43px;
+    max-height: 43px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+    margin: 8px 0;
+}
+
+.products .box .radius{
+    margin: 0;
+}
+
+.supplier-data.nav-tabs{
+    overflow-x: auto;
+    & li > a, 
+    & li > a:hover{
+        padding: 8px;
+    }
+}
+
 @media (max-width: 767px){
     #header.header-scroll{
         margin-bottom: 60px;

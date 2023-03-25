@@ -786,7 +786,11 @@ $color-grey-5: #AAAAAA;
         padding: 3px 0;
         border-radius: 50%;
         font-size: .75em;
-    } 
+    }
+    .showmore{
+        margin-top: 8px;
+    }
+
 }
 
 .dxgvTable_Moderno{
@@ -1159,4 +1163,12 @@ $color-grey-5: #AAAAAA;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
+}
+
+.float-e-margins .updateReview{
+    margin-top: 12px;
+}
+
+.whitespace-nowrap{
+    white-space: nowrap !important;
 }
