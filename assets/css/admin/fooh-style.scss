@@ -1028,10 +1028,11 @@ $color-grey-5: #AAAAAA;
             align-items: flex-start;
             margin-bottom: 24px;
             &--actions{
-                margin: 0 -8px 24px;
+                margin: 0 -4px 24px;
                 .fh-button{
-                    width: calc(100% - 16px);
-                    margin: 0 8px;
+                    width: calc(100% - 8px);
+                    margin: 0 4px;
+                    padding: 8px 8px;
                 }
             }
         }
@@ -1048,7 +1049,6 @@ $color-grey-5: #AAAAAA;
         &__radios{
             display: flex;
             flex-direction: column;
-            padding: 8px 16px;
             border: 1px solid hsl(0, 0%, 20%);
             border-radius: 4px;
         }
@@ -1122,6 +1122,7 @@ $color-grey-5: #AAAAAA;
             &__left, 
             &__right{
                 width: 100%;
+                padding: 0 8px;
             }
             &__septr{
                 height: .5px;
@@ -1140,6 +1141,17 @@ $color-grey-5: #AAAAAA;
 
 @media (max-width: 768px){
     .fh-accup{
+        .fh-accup-details{
+            &__left-row{
+                flex-direction: column;
+            }
+            &__left-rhead, 
+            &__left-rcont, 
+            &__right-rhead, 
+            &__right-rcont{
+                width: 100%;
+            }
+        }
         .fh-accup-subdetails{
             &__card{
                 width: calc(50% - 16px);
