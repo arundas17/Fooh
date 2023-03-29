@@ -632,6 +632,9 @@ $color-grey: #e8e8e8;
                     background-color: #fff !important;
                 }
             }
+            .editsLabel{
+                margin-bottom: 8px;
+            }
         }
         
     }
@@ -912,5 +915,28 @@ $color-grey: #e8e8e8;
             border-bottom: none !important;
         }
         
+    }
+}
+
+
+.fh-header{
+    &__notification{
+        position: relative;
+
+        .count{
+            position: absolute;
+            left: 12px;
+            top: -10px;
+            display: inline-flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            font-size: 10px;
+            font-weight: 600;
+            line-height: 1;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #cc1e36;
+        }
     }
 }
