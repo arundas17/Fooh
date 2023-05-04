@@ -990,11 +990,13 @@ $color-grey-5: #AAAAAA;
     align-items: center;
     text-align: center;
     font-weight: 700;
+    color: hsl(0, 0%, 100%);
     background-color: hsl(35, 99%, 59%);
     padding: 8px 16px;
     border-radius: 4px;
     &:hover{
         font-weight: 700;
+        color: hsl(0, 0%, 100%);
         background-color: hsl(48, 100%, 50%);
     }
 }
@@ -1116,6 +1118,17 @@ $color-grey-5: #AAAAAA;
     }
 }
 
+#ctl00_ContentPlaceHolder1_wccZilzarTraffic, 
+#ctl00_ContentPlaceHolder1_wccCompanyTraffic,
+#ctl00_ContentPlaceHolder1_wccTransactions{
+    width: auto !important;
+    height: auto !important;
+
+    img{
+        width: 100% !important;
+    }
+}
+
 @media (max-width: 1024px){
     .fh-accup{
         .fh-accup-details{
@@ -1183,4 +1196,35 @@ $color-grey-5: #AAAAAA;
 
 .whitespace-nowrap{
     white-space: nowrap !important;
+}
+
+.btn-primary{
+    color: rgb(0, 0, 0) !important;
+    &:hover{
+        color: rgb(0, 0, 0) !important;
+    }
+}
+
+.fh-shopinsg__selects{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.panel-heading-zilzar{
+    .badge{
+        margin-right: 7px;
+    }
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px){
+    .fh-shopinsg__selects{
+        flex-direction: column;
+        align-items: normal;
+    }     
 }

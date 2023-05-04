@@ -633,7 +633,8 @@ $color-grey: #e8e8e8;
                 }
             }
             .editsLabel{
-                margin-bottom: 8px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
         }
         
@@ -674,7 +675,16 @@ $color-grey: #e8e8e8;
         &__homesec-img{
             min-height: 360px;
         }
+        .myacc{
+            &.profile-font{
+                .editsLabel{
+                    margin-bottom: 8px;
+                }
+            }
+            
+        }
     }
+
     
 }
 
@@ -910,11 +920,7 @@ $color-grey: #e8e8e8;
             .country img{
                 width: 50px !important;
             }
-        }
-        .cart-item{
-            border-bottom: none !important;
-        }
-        
+        }        
     }
 }
 

@@ -397,6 +397,7 @@ label.fooh-input__label{
 }
 
 .products .box{
+    position: relative;
     .dxWeb_edtCheckBoxUnchecked_Moderno{
         border: 1px solid hsl(0, 0%, 80%) !important;
         margin-top: 4px !important;
@@ -419,6 +420,26 @@ label.fooh-input__label{
             width: 6px;
         }
     }
+    &::after{
+        content: "";
+        position: absolute;
+        right: 16px;
+        bottom: 0;
+        left: 16px;
+        border: 1px dotted hsl(0, 0%, 80%);
+
+    }
+    .name p{
+        min-height: auto;
+        max-height: 100%;
+    }
+    .price{
+        min-height: auto;
+    }
+    .border{
+        display: none;
+    }
+
 }
 
 .fooh-prdt-addcart-pop{
@@ -579,6 +600,9 @@ label.fooh-input__label{
 
 .chat-history{
     border: none;
+    textarea{
+        direction: ltr;
+    }
 }
 
 .fh-searchProductsGrid{
@@ -597,6 +621,208 @@ label.fooh-input__label{
     padding: 5px;
 }
 
+#uploadControl{
+    margin-top: 0 !important;
+}
+
+.footer .socialmedia {
+    & > ul{
+        display: flex;
+        justify-content: flex-end;
+        margin: 8px -4px;
+        li{
+            margin: 0 4px;
+        }
+    }
+}
+
+.footer .quick-links{
+    list-style: none;
+    padding-left: 0;
+    & > li{
+        display: inline-block;
+    }
+    .list-inline{
+        display: block;
+    }
+}
+
+.notify div > a > span{
+    height: 32px !important;
+    width: 32px !important;
+
+    &.sp-inquiries {
+        background-position: -60px 2px !important;
+    }
+    &.sp-cart {
+        background-position: 0px -138px !important;
+    }
+    &.sp-tradeleads {
+        background-position: 0px -1px !important;
+    }
+    &.sp-wishlist {
+        background-position: -217px -138px !important;
+    }
+}
+
+.banner-side .login-links.forgotpass{
+    font-weight: 500;
+}
+
+.fh-availability{
+    font-size: 12px !important;
+    font-weight: 300;
+
+    label.dx-wrap{
+        &:hover{
+            cursor: pointer;
+            text-underline-offset: 2px;
+            text-decoration: underline;
+        }
+    }
+}
+
+.fh-halalstatus{
+    font-size: 12px !important;
+    font-weight: 300;
+    label{
+        &:hover{
+            cursor: pointer;
+            text-underline-offset: 2px;
+            text-decoration: underline;
+        }
+    }
+}
+
+.features{
+    .row {
+        div{
+            font-size: .75em;
+        }
+        .dl-horizontal dt{
+            text-overflow: initial;
+        }
+    } 
+}
+
+.header .categories {
+    .caret{
+        display: none;
+    }
+}
+
+.products .box{
+    input[type="submit"]{
+        font-size: 10px;
+    }
+}
+
+.filter-dropdown{
+    li a{
+        text-align: center;
+    }
+}
+
+#ctl27_divSupplierTopF{
+    li .dxWeb_edtCheckBoxUnchecked_Moderno{
+        background-image: url('/DXR.axd?r=0_2775-VNRap');
+    }
+    li .dxWeb_edtCheckBoxChecked_Moderno{
+        background-image: url('/DXR.axd?r=0_2775-VNRap');
+    }
+}
+
+.products .cart-item{
+    .dxWeb_edtCheckBoxUnchecked_Moderno{
+        background-image: url('/DXR.axd?r=0_2775-VNRap');
+    }
+    .dxWeb_edtCheckBoxChecked_Moderno{
+        background-image: url('/DXR.axd?r=0_2775-VNRap');
+    }
+}
+
+.dxhe-iframe-wrapper{
+    border-bottom: 1px solid red;
+}
+
+.sort.inbox{
+    li .dxWeb_edtCheckBoxUnchecked_Moderno{
+        background-image: url('/DXR.axd?r=0_2775-VNRap');
+    }
+    li .dxWeb_edtCheckBoxChecked_Moderno{
+        background-image: url('/DXR.axd?r=0_2775-VNRap');
+    }
+}
+
+.home-section.brdrt{
+    padding-top: 0;
+    border-top: 0;
+}
+
+.fooh-myorders-table{
+    .dxgvControl_Material{
+        td img{
+            float: none;
+        }
+    }
+}
+
+.pagination {
+    li{
+        margin-top: 12px;
+        display: inline-block;
+        span{
+            background-color: transparent;
+        }
+    }
+} 
+
+.header .dropdown-menu ul{
+    overflow-y: auto;
+}
+
+.categories .dropdown-menu{
+    z-index: 9999;
+}
+
+.footer .search a{
+    z-index: 2;
+}
+
+#products-wrapper{
+    .dl-horizontal {
+        dt{
+            padding: 0 0 4px 0;
+        }
+        dd{
+            padding: 0 0 16px 0;
+        }
+    } 
+}
+
+.userlogin.activated{
+    background-image: none;
+    display: flex;
+}
+
+#ctl27_divAccountActive{
+    margin: 0 auto;
+}
+
+#ctl28_Web_ProfileTradeFinancing_GridFinancing{
+    .dxgvEditForm_Moderno > td.dxgv {
+        padding: 0;
+    }
+    #ctl28_Web_ProfileTradeFinancing_GridFinancing_DXEFL_DXEditor1_EC{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .inquiry{
+        padding: 10px 10px 0;
+    }
+}
 
 @media (max-width: 767px){
     #header.header-scroll{
@@ -611,14 +837,6 @@ label.fooh-input__label{
     .JoinUs-Wrap{
         display: none !important;
     }    
-    .footer .socialmedia {
-        top: 5%;
-        ul{
-            border-bottom: none;
-            padding: 0;
-            margin: 0;
-        }
-    }
     .products .price .btn-yellow{
         font-size: 14px;
         padding: 8px 8px;
@@ -653,6 +871,29 @@ label.fooh-input__label{
             margin: 0 2px;
         }
     }
+    .sort.inbox{
+        .list{
+            .box > :first-child{
+                width: 10%;
+            }
+            .products .radius{
+                width: 30%;           
+            }
+            .products .name{
+                width: 60%;           
+            }
+        }
+    } 
+    .products .box{
+        input[type="submit"]{
+            font-size: 14px;
+        }
+    }
+    .brdrb3{
+        .tiksslider{
+            margin-top: 16px;
+        }
+    } 
 }
 
 @media (max-width: 620px){
@@ -667,14 +908,23 @@ label.fooh-input__label{
         align-items: center !important;
         line-height: 1 !important;
     }
+    .fooh-profile__tabs {
+        overflow-x: auto;
+        li a{
+            font-size: 10px !important;
+        }
+    } 
+    .footer .quick-links{
+        & > li{
+            width: calc(33% - 8px);
+            margin-bottom: $spacer-4;
+        }
+    }
 }
 
 @media (max-width: 520px){
     #divLogOut{
         display: none !important;        
-    }
-    .footer .socialmedia {
-        top: 220px;
     }
     .browsecat {
         margin: 0 -2px;
@@ -687,6 +937,12 @@ label.fooh-input__label{
         display: inline-flex !important;
         align-items: center !important;
         line-height: 1 !important;
+    }
+    .footer .quick-links{
+        & > li{
+            width: calc(50% - 8px);
+            margin-bottom: $spacer-4;
+        }
     }
 }
 
