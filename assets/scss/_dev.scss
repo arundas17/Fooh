@@ -84,7 +84,7 @@
             }
         }
         td{
-            text-align: center;
+            text-align: left;
             color: #000 !important;
         }
         .dxgvPagerBottomPanel_Material{
@@ -742,7 +742,7 @@ label.fooh-input__label{
 }
 
 .dxhe-iframe-wrapper{
-    border-bottom: 1px solid red;
+    border-bottom: .5px solid rgb(209, 209, 209);
 }
 
 .sort.inbox{
@@ -797,7 +797,31 @@ label.fooh-input__label{
         dd{
             padding: 0 0 16px 0;
         }
-    } 
+    }
+    &.content:not(.list){
+        .products{
+            .box{
+                &:hover .hover{
+                    display: flex;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+                .hover {
+                    .alignb{
+                        position: static;
+                        a{
+                            border-top: none;
+                            padding-top: 0;
+                        }
+                    }
+                }
+                p:not([class]) {
+                   position: static;
+                }
+            }
+        }
+    }
 }
 
 .userlogin.activated{
@@ -816,6 +840,29 @@ label.fooh-input__label{
     #ctl28_Web_ProfileTradeFinancing_GridFinancing_DXEFL_DXEditor1_EC{
         display: none;
     }
+}
+// cai
+#ctl27_divTradeLead{
+    .tradelead-text{
+        label{
+            margin-top: 5px;
+        }
+    }
+}
+
+.response-tradelead{
+    width: 100%;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+#ctl31_pcNewsletterAlert_PW-1{
+    position: fixed !important;
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 90% !important;
+    max-width: 300px !important;
 }
 
 @media (max-width: 991px) {
@@ -893,7 +940,16 @@ label.fooh-input__label{
         .tiksslider{
             margin-top: 16px;
         }
-    } 
+    }
+    // cai
+    #ctl27_divTradeLead{
+        .tradelead-text{
+            label{
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
 
 @media (max-width: 620px){
