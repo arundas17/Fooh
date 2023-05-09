@@ -756,9 +756,16 @@ $color-grey-5: #AAAAAA;
     padding: 8px 4px;
 }
 
-#ctl00_ContentPlaceHolder1_pnlSupplier .notify{
-    padding: 24px 0;
-}
+#ctl00_ContentPlaceHolder1_pnlSupplier {
+    .notify{
+        padding: 24px 0;
+    }
+    .fooh-admin__action-crd{
+        .btn{
+            white-space: normal;
+        }
+    }
+} 
 
 .py-16{
     padding-top: 16px;
@@ -1118,6 +1125,14 @@ $color-grey-5: #AAAAAA;
     }
 }
 
+#ctl00_ContentPlaceHolder1_ProductBoostListing_PanelDetails{
+    table{
+        width: 100%;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+}
+
 #ctl00_ContentPlaceHolder1_wccZilzarTraffic, 
 #ctl00_ContentPlaceHolder1_wccCompanyTraffic,
 #ctl00_ContentPlaceHolder1_wccTransactions{
@@ -1170,7 +1185,10 @@ $color-grey-5: #AAAAAA;
                 width: calc(50% - 16px);
             }
         }
-    }   
+    }
+    #ctl00_ContentPlaceHolder1_ProductBoostListing_GridEachOrder{
+        padding: 16px;
+    } 
 }
 
 @media (max-width: 640px){
