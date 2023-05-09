@@ -821,7 +821,31 @@ label.fooh-input__label{
                     }
                 }
                 p:not([class]) {
-                   position: static;
+                    position: static;
+                }
+                .price{
+                    .price-show{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &.content{
+        .products{
+            .box{
+                &:hover .hover{
+                    display: none;
+                }
+                .price{
+                    float: right;
+                    padding: 0;
+                    width: calc(78% - 16px);
+                    margin: 4px 0;
+
+                    .price-show{
+                        display: block;
+                    }
                 }
             }
         }
@@ -970,11 +994,17 @@ label.fooh-input__label{
         }
     }
     #products-wrapper{
-        &.content:not(.list){
+        &.content:not(.list), 
+        &.content{
             .products{
                 .box{
                     &:hover .hover{
                         display: none;
+                    }
+                    .price{
+                        .price-show{
+                            display: none;
+                        }
                     }
                 }
             }
