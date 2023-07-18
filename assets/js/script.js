@@ -117,17 +117,13 @@ if (qty_value || qty_plus || qty_minus) {
 }
 
 //view order details section
-let order_details_btn = document.querySelectorAll('.fooh-cart-card__wrapper .fooh-cart-card .fooh-cart-card__cnt-btns')
+let order_details_btn = document.querySelectorAll('.fooh-cart-card__wrapper .fooh-cart-card .dropdown-menu .fooh-graph-view')
+let order_details_section = document.querySelectorAll(".fooh-view-ordrs__order-progress");
 
-let order_details_section = document.querySelectorAll(
-  ".fooh-cart-card__wrapper .fooh-view-ordrs__order-progress"
-);
-
-order_details_btn.forEach((e,index)  => {
-    e.addEventListener('click', () => { 
-        order_details_section[index].classList.toggle(
-          "fooh-view-ordrs__order-progress--active"
-        );
+order_details_btn.forEach((item, index) => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        order_details_section[index].classList.toggle("fooh-view-ordrs__order-progress--active");
     });
 });
 
